@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plays username="nehilism" userid="2044896" total="963" page="1" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+	<play id="81839750" date="2024-02-24" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+		<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+			<subtypes>
+				<subtype value="boardgame" />
+				<subtype value="boardgamecompilation" />
+				<subtype value="boardgameimplementation" />
+			</subtypes>
+		</item>
+		<players>
+			<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+			<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+		</players>
+	</play>
+
+
+	<play id="81803826" date="2024-02-23" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="KeyForge: Call of the Archons" objecttype="thing" objectid="257501">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="81732073" date="2024-02-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Morels" objecttype="thing" objectid="122298">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="81124101" date="2024-02-05" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Everdell" objecttype="thing" objectid="199792">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="80566902" date="2024-01-22" quantity="3" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My City" objecttype="thing" objectid="295486">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="80520400" date="2024-01-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="80456526" date="2024-01-20" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="79493380" date="2023-12-29" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Codenames" objecttype="thing" objectid="178900">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493436" date="2023-12-29" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Dominion" objecttype="thing" objectid="36218">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493240" date="2023-12-29" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493358" date="2023-12-28" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Codenames" objecttype="thing" objectid="178900">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493230" date="2023-12-28" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493397" date="2023-12-28" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Throw Throw Burrito" objecttype="thing" objectid="274533">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493211" date="2023-12-27" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79493325" date="2023-12-27" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="The Quacks of Quedlinburg" objecttype="thing" objectid="244521">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="79141904" date="2023-12-25" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="My Lil&#039; Everdell" objecttype="thing" objectid="375852">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="78926274" date="2023-12-20" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Meadow" objecttype="thing" objectid="314491">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="78389097" date="2023-12-03" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Battleship" objecttype="thing" objectid="2425">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="78339664" date="2023-12-02" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="78153360" date="2023-11-26" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Carcassonne" objecttype="thing" objectid="822">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77964950" date="2023-11-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Carcassonne" objecttype="thing" objectid="822">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77729466" date="2023-11-14" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Morels" objecttype="thing" objectid="122298">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="77616849" date="2023-11-11" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77623294" date="2023-11-11" quantity="3" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77607228" date="2023-11-11" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Tigris &amp; Euphrates" objecttype="thing" objectid="42">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77551244" date="2023-11-09" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Great Western Trail" objecttype="thing" objectid="193738">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77551252" date="2023-11-09" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77523872" date="2023-11-08" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Spots" objecttype="thing" objectid="372559">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77485925" date="2023-11-06" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77485919" date="2023-11-06" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Spots" objecttype="thing" objectid="372559">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77443554" date="2023-11-05" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77356290" date="2023-11-04" quantity="6" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77368243" date="2023-11-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77381540" date="2023-11-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77390979" date="2023-11-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Spots" objecttype="thing" objectid="372559">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77343079" date="2023-11-03" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Carcassonne" objecttype="thing" objectid="822">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="rinjob" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77342576" date="2023-11-03" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="The Quest for El Dorado: The Golden Temples" objecttype="thing" objectid="271615">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="77277526" date="2023-11-01" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77277519" date="2023-11-01" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Tigris &amp; Euphrates" objecttype="thing" objectid="42">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77213414" date="2023-10-30" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77213409" date="2023-10-30" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Lost Ruins of Arnak" objecttype="thing" objectid="312484">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77213422" date="2023-10-30" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Meadow" objecttype="thing" objectid="314491">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77153572" date="2023-10-29" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77132879" date="2023-10-28" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="For Northwood! A Solo Trick-Taking Game" objecttype="thing" objectid="334590">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="77106060" date="2023-10-28" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77054464" date="2023-10-26" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77058601" date="2023-10-26" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77034002" date="2023-10-25" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77004539" date="2023-10-24" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Caverna: The Cave Farmers" objecttype="thing" objectid="102794">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77007571" date="2023-10-24" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="77004547" date="2023-10-24" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76985860" date="2023-10-23" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Meadow" objecttype="thing" objectid="314491">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76974187" date="2023-10-23" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="Sherros" userid="2120217" name="Dan Sherry" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76958198" date="2023-10-22" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="For Northwood! A Solo Trick-Taking Game" objecttype="thing" objectid="334590">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76930158" date="2023-10-22" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76942485" date="2023-10-22" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Hive Pocket" objecttype="thing" objectid="154597">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgamecompilation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76928597" date="2023-10-22" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76951117" date="2023-10-22" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76957635" date="2023-10-22" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76896953" date="2023-10-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="7 Wonders Duel" objecttype="thing" objectid="173346">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76929256" date="2023-10-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="For Northwood! A Solo Trick-Taking Game" objecttype="thing" objectid="334590">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76905538" date="2023-10-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76914990" date="2023-10-21" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76850613" date="2023-10-20" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="7 Wonders Duel" objecttype="thing" objectid="173346">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76870197" date="2023-10-20" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="The Quacks of Quedlinburg" objecttype="thing" objectid="244521">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Mom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76830050" date="2023-10-19" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="7 Wonders Duel" objecttype="thing" objectid="173346">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76842878" date="2023-10-19" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Meadow" objecttype="thing" objectid="314491">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Mom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76826338" date="2023-10-19" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="Sherros" userid="2120217" name="Dan Sherry" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76849681" date="2023-10-19" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="Sherros" userid="2120217" name="Dan Sherry" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76799472" date="2023-10-18" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Sky Team" objecttype="thing" objectid="373106">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="Sherros" userid="2120217" name="Dan Sherry" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76792438" date="2023-10-17" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Blood on the Clocktower" objecttype="thing" objectid="240980">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="76731557" date="2023-10-15" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="7 Wonders Duel" objecttype="thing" objectid="173346">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76730907" date="2023-10-15" quantity="2" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Ruckus" objecttype="thing" objectid="19046">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+								</play>
+	<play id="76641090" date="2023-10-13" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="7 Wonders Duel" objecttype="thing" objectid="173346">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76628410" date="2023-10-13" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Tigris &amp; Euphrates" objecttype="thing" objectid="42">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76597828" date="2023-10-12" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Caverna: The Cave Farmers" objecttype="thing" objectid="102794">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76564832" date="2023-10-10" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76564815" date="2023-10-10" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Everdell" objecttype="thing" objectid="199792">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76451115" date="2023-10-07" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76450733" date="2023-10-07" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Carcassonne" objecttype="thing" objectid="822">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameintegration" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76448983" date="2023-10-07" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Sushi Go!" objecttype="thing" objectid="133473">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76368348" date="2023-10-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Inis" objecttype="thing" objectid="155821">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76368354" date="2023-10-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="The King Is Dead: Second Edition" objecttype="thing" objectid="319966">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76368350" date="2023-10-04" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Rush Out!" objecttype="thing" objectid="300521">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76345168" date="2023-10-03" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76320631" date="2023-10-02" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Azul" objecttype="thing" objectid="230802">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Martha" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76282626" date="2023-10-01" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76239902" date="2023-09-30" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76207901" date="2023-09-29" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76194000" date="2023-09-29" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Lost Ruins of Arnak" objecttype="thing" objectid="312484">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76183131" date="2023-09-28" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Caverna: The Cave Farmers" objecttype="thing" objectid="102794">
+				<subtypes>
+										<subtype value="boardgame" />
+										<subtype value="boardgameimplementation" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="rinjob" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76171558" date="2023-09-28" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Dice Forge" objecttype="thing" objectid="194594">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76159231" date="2023-09-27" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76157495" date="2023-09-27" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Tigris &amp; Euphrates" objecttype="thing" objectid="42">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76122118" date="2023-09-26" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76131735" date="2023-09-26" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76131748" date="2023-09-26" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Dice Forge" objecttype="thing" objectid="194594">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76109353" date="2023-09-25" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Cairn" objecttype="thing" objectid="275916">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76091075" date="2023-09-25" quantity="1" length="0" incomplete="0" nowinstats="0" location="BGA">
+			<item name="Spots" objecttype="thing" objectid="372559">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="" userid="0" name="Zach" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Malcolm" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="PumpkinsRockOn" userid="653744" name="David Adams" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	<play id="76074503" date="2023-09-24" quantity="1" length="0" incomplete="0" nowinstats="0" location="">
+			<item name="Azul" objecttype="thing" objectid="230802">
+				<subtypes>
+										<subtype value="boardgame" />
+									</subtypes>
+			</item>
+									<players>
+									<player username="nehilism" userid="2044896" name="Tom" startposition="" color="" score="" new="0" rating="0" win="0" />
+						<player username="" userid="0" name="Joaquín" startposition="" color="" score="" new="0" rating="0" win="0" />
+						</players>
+					</play>
+	</plays>
