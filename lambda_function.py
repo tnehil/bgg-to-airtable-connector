@@ -1,5 +1,4 @@
 import os
-import time
 import requests
 from bs4 import BeautifulSoup
 from pyairtable import Api
@@ -13,77 +12,88 @@ AIRTABLE_BASE = "appP335Rk2WlkFqCs"
 COLLECTION_TABLE = "tblFOoQ5UokcjjqNB"
 PLAYS_TABLE = "tblWr6IW1xFO1ni3b"
 
-def get_bgg_collection():
-    with requests.Session() as s:
-        details = {
-            "credentials": {
-                "username": USER,
-                "password": PW
-            }
-        }
+class BGGConnection:
+    def __init__(self, user = None, pw = None, infile = None):
+        
+        self.data = ""
 
-        s.post("https://boardgamegeek.com/login/api/v1", json=details)
+        if user and pw:
+            self.user = user
+            self.pw = pw
+        if infile:
+            self.file_path = infile
 
-        req = s.get(f"https://boardgamegeek.com/xmlapi2/collection?username={USER}&showprivate=1")
+    def get_bgg_collection(self):
+        if self.file_path:
+            with open(self.file_path, "r") as f:
+                self.data = f.read()
 
-        soup = BeautifulSoup(req.text, features="xml")
-        if soup.find("message"):
-            print("Collection request initiated.")
-        else:
-            return soup
+        elif self.user and self.pw:
+            with requests.Session() as s:
+                details = {
+                    "credentials": {
+                        "username": USER,
+                        "password": PW
+                    }
+                }
 
-def get_bgg_plays(page=1):
-    with  requests.Session() as s:
-        req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={USER}&page={page}")
-        return req.text
+                s.post("https://boardgamegeek.com/login/api/v1", json=details)
 
-# data = get_bgg_data()
-# with open("bgg_data.xml", "w") as f:
-#     f.write(data)
-    
-# with open("plays.xml", "r") as f:
-#     data = f.read()
+                req = s.get(f"https://boardgamegeek.com/xmlapi2/collection?username={USER}&showprivate=1")
 
-def read_bgg_collection(data):
+                soup = BeautifulSoup(req.text, features="xml")
+                if soup.find("message"):
+                    # The data is not available yet
+                    pass
+                else:
+                    self.data = req.text
 
-    items = data.findAll("item")
+    def get_bgg_plays(page=1):
+        with  requests.Session() as s:
+            req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={USER}&page={page}")
+            return req.text
 
-    game_data = []
+class BGGCollection:
+    def read_bgg_collection(data):
 
-    for item in items:
-        name = item.find("name").text
-        object_id = item.get("objectid")
-        coll_id = item.get("collid")
-        pub_year = item.find("yearpublished").text if item.find("yearpublished") else ""
-        status = []
-        statuses = item.find("status")
-        if statuses.get("own") == "1":
-            status.append("Own")
-        if statuses.get("prevowned") == "1":
-            status.append("Previously owned")
-        if statuses.get("wishlist") == "1":
-            status.append("Wishlist")
-        plays = int(item.find("numplays").text)
-        private = item.find("privateinfo")
-        acquisition_date = private.get("acquisitiondate") if private else ""
-        price_paid = private.get("pricepaid") if private else ""
-        acquired_from = private.get("acquiredfrom") if private else ""
-        game_data.append({
-            "fields": {
-                "game": name,
-                "object_id": object_id,
-                "coll_id": coll_id,
-                "pub_year": int(pub_year) if pub_year else "",
-                "status": status,
-                "plays": int(plays) if plays else "",
-                "date_acquired": acquisition_date,
-                "year_acquired": acquisition_date.split("-")[0] if acquisition_date else "",
-                "price_paid": float(price_paid) if price_paid else "",
-                "acquired_from": acquired_from
-            }
-        })
+        items = data.findAll("item")
 
-    return game_data
+        game_data = []
+
+        for item in items:
+            name = item.find("name").text
+            object_id = item.get("objectid")
+            coll_id = item.get("collid")
+            pub_year = item.find("yearpublished").text if item.find("yearpublished") else ""
+            status = []
+            statuses = item.find("status")
+            if statuses.get("own") == "1":
+                status.append("Own")
+            if statuses.get("prevowned") == "1":
+                status.append("Previously owned")
+            if statuses.get("wishlist") == "1":
+                status.append("Wishlist")
+            plays = int(item.find("numplays").text)
+            private = item.find("privateinfo")
+            acquisition_date = private.get("acquisitiondate") if private else ""
+            price_paid = private.get("pricepaid") if private else ""
+            acquired_from = private.get("acquiredfrom") if private else ""
+            game_data.append({
+                "fields": {
+                    "game": name,
+                    "object_id": object_id,
+                    "coll_id": coll_id,
+                    "pub_year": int(pub_year) if pub_year else "",
+                    "status": status,
+                    "plays": int(plays) if plays else "",
+                    "date_acquired": acquisition_date,
+                    "year_acquired": acquisition_date.split("-")[0] if acquisition_date else "",
+                    "price_paid": float(price_paid) if price_paid else "",
+                    "acquired_from": acquired_from
+                }
+            })
+
+        return game_data
 
 def read_bgg_plays(data):
     soup = BeautifulSoup(data, features="xml")
