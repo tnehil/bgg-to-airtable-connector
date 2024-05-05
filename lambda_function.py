@@ -1,4 +1,5 @@
 import os
+import time
 import requests
 from bs4 import BeautifulSoup
 from pyairtable import Api
@@ -15,15 +16,19 @@ PLAYS_TABLE = "tblWr6IW1xFO1ni3b"
 class BGGConnection:
     def __init__(self, user = None, pw = None, infile = None):
         
+        self.user = ""
+        self.pw = ""
+        self.file_path = ""
         self.data = ""
 
         if user and pw:
             self.user = user
             self.pw = pw
+
         if infile:
             self.file_path = infile
 
-    def get_bgg_collection(self):
+    def get_collection(self):
         if self.file_path:
             with open(self.file_path, "r") as f:
                 self.data = f.read()
@@ -39,24 +44,23 @@ class BGGConnection:
 
                 s.post("https://boardgamegeek.com/login/api/v1", json=details)
 
-                req = s.get(f"https://boardgamegeek.com/xmlapi2/collection?username={USER}&showprivate=1")
+                req = s.get(f"https://boardgamegeek.com/xmlapi2/collection?username={self.user}&showprivate=1")
 
-                soup = BeautifulSoup(req.text, features="xml")
-                if soup.find("message"):
-                    # The data is not available yet
-                    pass
-                else:
-                    self.data = req.text
+                self.data = req.text
+                return self.data
 
     def get_bgg_plays(page=1):
         with  requests.Session() as s:
-            req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={USER}&page={page}")
+            req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={self.user}&page={page}")
             return req.text
 
 class BGGCollection:
-    def read_bgg_collection(data):
+    def __init__(self, raw_data):
+        self.data = self.read_bgg_collection(raw_data)
 
-        items = data.findAll("item")
+    def read_bgg_collection(self, raw_data):
+
+        items = raw_data.findAll("item")
 
         game_data = []
 
@@ -93,7 +97,8 @@ class BGGCollection:
                 }
             })
 
-        return game_data
+        self.data = game_data
+        return self.data
 
 def read_bgg_plays(data):
     soup = BeautifulSoup(data, features="xml")
@@ -132,13 +137,16 @@ def update_airtable(game_data, table_id, key_fields):
 
 
 if __name__ == "__main__":
-    bgg_data = get_bgg_collection()
-    game_data = read_bgg_collection(bgg_data)
-    update_airtable(game_data, table_id=COLLECTION_TABLE, key_fields=["game", "object_id", "coll_id"])
-    # print(read_bgg_plays(data))
-    # for i in range(1,11):
-    #     data = get_bgg_plays(page=i)
-    #     play_data = read_bgg_plays(data)
-    #     update_airtable(play_data, PLAYS_TABLE, key_fields=["id"])
-    #     time.sleep(3)
-    # pass
+    cnx = BGGConnection(user=USER, pw=PW)
+    data = cnx.get_collection()
+    print(data)
+    soup = BeautifulSoup(data, features="xml")
+    if soup.find("message"):
+        print("Request initiated. Waiting 30 seconds.")
+        time.sleep(30)
+        data = cnx.get_collection()
+        print(data)
+    collex = BGGCollection()
+    game_data = collex.read_bgg_collection(soup)
+    update_airtable(game_data, COLLECTION_TABLE, ["game", "object_id", "coll_id"])
+    
