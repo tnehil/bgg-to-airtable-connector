@@ -13,46 +13,29 @@ AIRTABLE_BASE = "appP335Rk2WlkFqCs"
 COLLECTION_TABLE = "tblFOoQ5UokcjjqNB"
 PLAYS_TABLE = "tblWr6IW1xFO1ni3b"
 
-class BGGConnection:
-    def __init__(self, user = None, pw = None, infile = None):
-        
-        self.user = ""
-        self.pw = ""
-        self.file_path = ""
-        self.data = ""
+class CollectionNotReadyException(BaseException):
+    pass
 
-        if user and pw:
-            self.user = user
-            self.pw = pw
-
-        if infile:
-            self.file_path = infile
+class BGGSession(requests.Session):
+    """An authenticated BGG session"""
+    def __init__(self, user=USER, pw=PW):
+        self.user = user
+        super().__init__()
+        self.post("https://boardgamegeek.com/login/api/v1", json={"credentials": {"username": user, "password": pw}})
 
     def get_collection(self):
-        if self.file_path:
-            with open(self.file_path, "r") as f:
-                self.data = f.read()
-
-        elif self.user and self.pw:
-            with requests.Session() as s:
-                details = {
-                    "credentials": {
-                        "username": USER,
-                        "password": PW
-                    }
-                }
-
-                s.post("https://boardgamegeek.com/login/api/v1", json=details)
-
-                req = s.get(f"https://boardgamegeek.com/xmlapi2/collection?username={self.user}&showprivate=1")
-
-                self.data = req.text
-                return self.data
-
-    def get_bgg_plays(page=1):
-        with  requests.Session() as s:
-            req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={self.user}&page={page}")
-            return req.text
+        """Requests BGG user collection with private items; returns BS4 soup"""
+        req = self.get("https://boardgamegeek.com/xmlapi2/collection?username={self.user}&showprivate=1")
+        soup = BeautifulSoup(req.text, features="xml")
+        if soup.find("message"):
+            raise CollectionNotReadyException
+        else:
+            return soup
+    
+    # def get_bgg_plays(page=1):
+    #     with  requests.Session() as s:
+    #         req = s.get(f"https://boardgamegeek.com/xmlapi2/plays?username={self.user}&page={page}")
+    #         return req.text
 
 class BGGCollection:
     def __init__(self, raw_data):
@@ -100,34 +83,34 @@ class BGGCollection:
         self.data = game_data
         return self.data
 
-def read_bgg_plays(data):
-    soup = BeautifulSoup(data, features="xml")
-    plays = soup.findAll("play")
+# def read_bgg_plays(data):
+#     soup = BeautifulSoup(data, features="xml")
+#     plays = soup.findAll("play")
 
-    play_data = []
+#     play_data = []
 
-    for play in plays:
-        id = play.get("id")
-        date = play.get("date")
-        qty = play.get("quantity")
-        location = play.get("location")
-        game = play.find("item").get("name")
-        players = []
-        if play.find("players"):
-            players = [player.get("name") for player in play.findAll("player")]
+#     for play in plays:
+#         id = play.get("id")
+#         date = play.get("date")
+#         qty = play.get("quantity")
+#         location = play.get("location")
+#         game = play.find("item").get("name")
+#         players = []
+#         if play.find("players"):
+#             players = [player.get("name") for player in play.findAll("player")]
 
-        play_data.append({
-            "fields": {
-                "date": date,
-                "game": game,
-                "plays": qty,
-                "location": location,
-                "players": players,
-                "id": id 
-            }   
-        })
+#         play_data.append({
+#             "fields": {
+#                 "date": date,
+#                 "game": game,
+#                 "plays": qty,
+#                 "location": location,
+#                 "players": players,
+#                 "id": id 
+#             }   
+#         })
 
-    return play_data
+#     return play_data
 
 def update_airtable(game_data, table_id, key_fields):
     api = Api(api_key=AIRTABLE_TOKEN)
@@ -137,16 +120,28 @@ def update_airtable(game_data, table_id, key_fields):
 
 
 if __name__ == "__main__":
-    cnx = BGGConnection(user=USER, pw=PW)
-    data = cnx.get_collection()
-    print(data)
-    soup = BeautifulSoup(data, features="xml")
-    if soup.find("message"):
-        print("Request initiated. Waiting 30 seconds.")
-        time.sleep(30)
-        data = cnx.get_collection()
-        print(data)
-    collex = BGGCollection()
-    game_data = collex.read_bgg_collection(soup)
-    update_airtable(game_data, COLLECTION_TABLE, ["game", "object_id", "coll_id"])
+    bgg = BGGSession()
+    retries = 1
+    while retries < 4:
+        try:
+            data = bgg.get_collection()
+            break
+        except CollectionNotReadyException:
+            print(f"Collection not ready; trying again in 30 seconds. (Attempt #{retries})")
+            time.sleep(30)
+            retries +=1
+    if data.find("message"):
+        print("The collection wasn't successfully retrieved.")
+    else:
+        print(BGGCollection(data))
+    
+    # soup = BeautifulSoup(data, features="xml")
+    # if soup.find("message"):
+    #     print("Request initiated. Waiting 30 seconds.")
+    #     time.sleep(30)
+    #     data = cnx.get_collection()
+    #     print(data)
+    # collex = BGGCollection()
+    # game_data = collex.read_bgg_collection(soup)
+    # update_airtable(game_data, COLLECTION_TABLE, ["game", "object_id", "coll_id"])
     
