@@ -1,12 +1,13 @@
 import os
 import time
+from itertools import batched
 import requests
 from bs4 import BeautifulSoup
 from pyairtable import Api
 
-USER = os.environ["USERNAME"]
-PW = os.environ["PW"]
-AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
+USER = os.getenv("BGGUSERNAME")
+PW = os.getenv("PW")
+AIRTABLE_TOKEN = os.getenv("AIRTABLE_TOKEN")
 
 # move to .env?
 AIRTABLE_BASE = "appP335Rk2WlkFqCs"
@@ -25,7 +26,7 @@ class BGGSession(requests.Session):
 
     def get_collection(self):
         """Requests BGG user collection with private items; returns BS4 soup"""
-        req = self.get("https://boardgamegeek.com/xmlapi2/collection?username={self.user}&showprivate=1")
+        req = self.get(f"https://boardgamegeek.com/xmlapi2/collection?username={self.user}&showprivate=1")
         soup = BeautifulSoup(req.text, features="xml")
         if soup.find("message"):
             raise CollectionNotReadyException
@@ -76,12 +77,40 @@ class BGGCollection:
                     "date_acquired": acquisition_date,
                     "year_acquired": acquisition_date.split("-")[0] if acquisition_date else "",
                     "price_paid": float(price_paid) if price_paid else "",
-                    "acquired_from": acquired_from
+                    "acquired_from": acquired_from,
+                    "weight": 0.0,
+                    "designers": []
                 }
             })
 
         self.data = game_data
+        self.set_game_specific_data()
         return self.data
+    
+    def set_game_specific_data(self):
+        ids = [game["fields"]["object_id"] for game in self.data]
+        for batch in batched(ids, 20):
+            url = f"https://boardgamegeek.com/xmlapi2/thing?stats=1&id={','.join(batch)}"
+            print(f"Fetching {url}...")
+            req = requests.get(url)
+            lookup = {}
+            soup = BeautifulSoup(req.text, features="xml")
+            items = soup.find("items").findAll("item")
+            for item in items:
+                id = item.get("id")
+                weight = item.find("statistics").find("averageweight").get("value")
+                designers = [lnk.get("value") for lnk in item.findAll("link") if lnk.get("type") == "boardgamedesigner"]
+                pub_year = item.find("yearpublished").get("value")
+                lookup[id] = {"weight": weight, "designers": designers, "pub_year": pub_year}
+            for game in self.data:
+                gid = game["fields"]["object_id"]
+                if gid in lookup:
+                    game["fields"]["weight"] = lookup[gid]["weight"]
+                    game["fields"]["designers"] = lookup[gid]["designers"]
+                    game["fields"]["pub_year"] = lookup[gid]["pub_year"]
+
+
+        
 
 # def read_bgg_plays(data):
 #     soup = BeautifulSoup(data, features="xml")
@@ -133,7 +162,8 @@ if __name__ == "__main__":
     if data.find("message"):
         print("The collection wasn't successfully retrieved.")
     else:
-        print(BGGCollection(data))
+        game_data = BGGCollection(data)
+        update_airtable(game_data.data, COLLECTION_TABLE, ["game", "object_id", "coll_id"])
     
     # soup = BeautifulSoup(data, features="xml")
     # if soup.find("message"):
