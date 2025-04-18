@@ -1,0 +1,12 @@
+[project]
+name = "bgg-to-airtable-connector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bs4>=0.0.2",
+    "lxml>=5.3.2",
+    "pyairtable>=3.1.1",
+    "requests>=2.32.3",
+]
