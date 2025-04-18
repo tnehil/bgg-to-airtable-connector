@@ -44,7 +44,7 @@ class BGGCollection:
 
     def read_bgg_collection(self, raw_data):
 
-        items = raw_data.findAll("item")
+        items = raw_data.find_all("item")
 
         game_data = []
 
@@ -95,11 +95,11 @@ class BGGCollection:
             req = requests.get(url)
             lookup = {}
             soup = BeautifulSoup(req.text, features="xml")
-            items = soup.find("items").findAll("item")
+            items = soup.find("items").find_all("item")
             for item in items:
                 id = item.get("id")
                 weight = item.find("statistics").find("averageweight").get("value")
-                designers = [lnk.get("value") for lnk in item.findAll("link") if lnk.get("type") == "boardgamedesigner"]
+                designers = [lnk.get("value") for lnk in item.find_all("link") if lnk.get("type") == "boardgamedesigner"]
                 pub_year = item.find("yearpublished").get("value")
                 lookup[id] = {"weight": weight, "designers": designers, "pub_year": pub_year}
             for game in self.data:
@@ -114,7 +114,7 @@ class BGGCollection:
 
 # def read_bgg_plays(data):
 #     soup = BeautifulSoup(data, features="xml")
-#     plays = soup.findAll("play")
+#     plays = soup.find_all("play")
 
 #     play_data = []
 
@@ -126,7 +126,7 @@ class BGGCollection:
 #         game = play.find("item").get("name")
 #         players = []
 #         if play.find("players"):
-#             players = [player.get("name") for player in play.findAll("player")]
+#             players = [player.get("name") for player in play.find_all("player")]
 
 #         play_data.append({
 #             "fields": {
