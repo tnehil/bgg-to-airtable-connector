@@ -126,11 +126,16 @@ class BGGCollection:
                     for summary in poll_summaries
                     if summary.get("name") == "suggested_numplayers"
                 ][0]
-                best_with_result = [
-                    res
-                    for res in suggest_numplayers_summary.find_all("result")
-                    if res.get("name") == "bestwith"
-                ][0].get("value")
+                best_with_result = (
+                    [
+                        res
+                        for res in suggest_numplayers_summary.find_all("result")
+                        if res.get("name") == "bestwith"
+                    ][0]
+                    .get("value")
+                    .replace("Best with ", "")
+                    .replace(" players", "")
+                )
 
                 designers = [
                     lnk.get("value")
