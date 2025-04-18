@@ -25,4 +25,4 @@ jobs:
                   BGGUSERNAME: ${{secrets.bgguser}}
                   PW: ${{secrets.pw}}
                   AIRTABLE_TOKEN: ${{secrets.airtable_token}}
-              run: uv run lambda_function.py
+              run: uv run main.py
