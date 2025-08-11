@@ -23,3 +23,7 @@ that accesses the collection endpoint first has to log in to the site.
 This is explained in a BGG thread:
 
 -   https://boardgamegeek.com/thread/2182271/programmatic-login-and-collection-update-scripts
+
+## Github Actions
+
+A github actions workflow runs the code once a day.
