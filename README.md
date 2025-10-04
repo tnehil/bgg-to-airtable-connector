@@ -26,4 +26,5 @@ This is explained in a BGG thread:
 
 ## Github Actions
 
-A github actions workflow runs the code once a day.
+A github actions workflow runs the code once a day. TODO: Have the action
+commit something so the workflow won't expire.
