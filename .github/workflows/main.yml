@@ -1,31 +1,32 @@
 name: bgg-airtable-connector
 
 on:
-    workflow_dispatch:
-    schedule:
-        # Run at 11:15 AM UTC - 5:15 or 6:15 central depending on dst
-        - cron: "15 11 * * *"
+  workflow_dispatch:
+  schedule:
+    # Run at 11:15 AM UTC - 5:15 or 6:15 central depending on dst
+    - cron: "15 11 * * *"
 
 jobs:
-    get-collection:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
+  get-collection:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: "Install uv"
-              uses: astral-sh/setup-uv@v5.4.2
+      - name: "Install uv"
+        uses: astral-sh/setup-uv@v5.4.2
 
-            - name: "Set up python"
-              uses: actions/setup-python@v5
-              with:
-                  python-version-file: ".python-version"
+      - name: "Set up python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
 
-            - name: Install the project
-              run: uv sync
+      - name: Install the project
+        run: uv sync
 
-            - name: "Run the script"
-              env:
-                  BGGUSERNAME: ${{secrets.bgguser}}
-                  PW: ${{secrets.pw}}
-                  AIRTABLE_TOKEN: ${{secrets.airtable_token}}
-              run: uv run main.py
+      - name: "Run the script"
+        env:
+          BGGUSERNAME: ${{secrets.bgguser}}
+          PW: ${{secrets.pw}}
+          AIRTABLE_TOKEN: ${{secrets.airtable_token}}
+          BGGTOKEN: ${{secrets.bggtoken}}
+        run: uv run main.py

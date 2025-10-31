@@ -111,7 +111,9 @@ class BGGCollection:
                 f"https://boardgamegeek.com/xmlapi2/thing?stats=1&id={','.join(batch)}"
             )
             print(f"Fetching {url}...")
-            req = requests.get(url)
+            req = requests.get(
+                url, headers={"Authorization": f"Bearer {os.environ['BGGTOKEN']}"}
+            )
             lookup = {}
             soup = BeautifulSoup(req.text, features="xml")
             items = soup.find("items").find_all("item")
