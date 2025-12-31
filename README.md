@@ -24,6 +24,9 @@ This is explained in a BGG thread:
 
 -   https://boardgamegeek.com/thread/2182271/programmatic-login-and-collection-update-scripts
 
+Getting item details now requires an API token. It should be stored in
+an env variable called BGGTOKEN.
+
 ## Github Actions
 
 A github actions workflow runs the code once a day. TODO: Have the action
