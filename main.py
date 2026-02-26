@@ -7,7 +7,7 @@ from pyairtable import Api
 
 USER = os.getenv("BGGUSERNAME")
 PW = os.getenv("PW")
-AIRTABLE_TOKEN = os.getenv("AIRTABLE_TOKEN")
+AIRTABLE_TOKEN = os.getenv("AIRTABLE_TOKEN", "")
 
 # move to .env?
 AIRTABLE_BASE = "appP335Rk2WlkFqCs"
@@ -220,6 +220,10 @@ if __name__ == "__main__":
         print("The collection wasn't successfully retrieved.")
     else:
         game_data = BGGCollection(data)
-        update_airtable(
-            game_data.data, COLLECTION_TABLE, ["game", "object_id", "coll_id"]
-        )
+        # update_airtable(
+        #     game_data.data, COLLECTION_TABLE, ["game", "object_id", "coll_id"]
+        # )
+        with open("log.txt", "a") as f:
+            f.write(
+                f"{time.strftime('%Y-%m-%d', time.localtime(time.time()))}: Found {len(game_data.data)} games and {sum([int(r['fields']['plays']) for r in game_data.data if r['fields']['plays']])} plays"
+            )
