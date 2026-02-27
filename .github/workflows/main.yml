@@ -6,6 +6,9 @@ on:
         # Run at 11:15 AM UTC - 5:15 or 6:15 central depending on dst
         - cron: "15 11 * * *"
 
+permissions:
+    contents: write
+
 jobs:
     get-collection:
         runs-on: ubuntu-latest
