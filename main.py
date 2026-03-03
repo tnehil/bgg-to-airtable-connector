@@ -225,5 +225,5 @@ if __name__ == "__main__":
         )
         with open("log.txt", "a") as f:
             f.write(
-                f"{time.strftime('%Y-%m-%d', time.localtime(time.time()))}: Found {len(game_data.data)} games and {sum([int(r['fields']['plays']) for r in game_data.data if r['fields']['plays']])} plays"
+                f"{time.strftime('%Y-%m-%d', time.localtime(time.time()))}: Found {len(game_data.data)} games and {sum([int(r['fields']['plays']) for r in game_data.data if r['fields']['plays']])} plays\n"
             )
