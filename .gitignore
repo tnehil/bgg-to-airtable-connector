@@ -1,2 +1,6 @@
 .env
 .venv/
+log.txt
+*.log
+out.log
+err.log

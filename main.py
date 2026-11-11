@@ -11,8 +11,6 @@ USER = os.getenv("BGGUSERNAME")
 PW = os.getenv("PW")
 AIRTABLE_TOKEN = os.getenv("AIRTABLE_TOKEN", "")
 
-IN_GITHUB_ACTIONS = os.getenv("GITHUB_ACTIONS") == "true"
-
 # Log to stdout, unbuffered, so messages show up in GitHub Actions output in
 # order. Set LOG_LEVEL=DEBUG for more detail.
 logging.basicConfig(
@@ -23,12 +21,6 @@ logging.basicConfig(
 )
 sys.stdout.reconfigure(line_buffering=True)
 log = logging.getLogger("bgg")
-
-
-def gha(command, message):
-    """Emit a GitHub Actions workflow command (annotation) when running in CI."""
-    if IN_GITHUB_ACTIONS:
-        print(f"::{command}::{message}", flush=True)
 
 
 def describe_secret(name, value):
@@ -97,7 +89,6 @@ class BGGSession(requests.Session):
                 "Referer": "https://boardgamegeek.com/login",
             }
         )
-        gha("group", "BGG login")
         log.info("Logging in to BGG as user %r", user)
         resp = self.post(
             "https://boardgamegeek.com/login/api/v1",
@@ -109,13 +100,11 @@ class BGGSession(requests.Session):
         log.info("Session cookies after login: %s", cookie_names or "NONE")
         if not resp.ok:
             log.error("BGG login failed with HTTP %s", resp.status_code)
-            gha("error", f"BGG login failed with HTTP {resp.status_code}")
+            sys.exit(1)
         elif "bggusername" not in [c.lower() for c in cookie_names]:
             log.warning(
                 "Login returned OK but no bggusername cookie; login may not have worked"
             )
-            gha("warning", "BGG login returned no bggusername cookie")
-        gha("endgroup", "")
 
     def get_collection(self):
         """Requests BGG user collection with private items; returns BS4 soup"""
@@ -135,16 +124,12 @@ class BGGSession(requests.Session):
         if errors:
             for e in errors:
                 log.error("BGG collection API error: %r", e.get_text(strip=True))
-            gha("error", "BGG collection API returned an error; see log")
         items_tag = soup.find("items")
         if items_tag is None:
             log.error(
                 "Collection response has no <items> element (not the expected XML)"
             )
-            gha(
-                "error",
-                f"Collection response was not the expected XML (HTTP {req.status_code})",
-            )
+
         else:
             n = len(items_tag.find_all("item"))
             log.info(
@@ -234,10 +219,6 @@ class BGGCollection:
             items_tag = soup.find("items")
             if items_tag is None:
                 log.error("Thing response for batch has no <items>; skipping batch")
-                gha(
-                    "error",
-                    f"BGG thing API returned unexpected response (HTTP {req.status_code})",
-                )
                 continue
             items = items_tag.find_all("item")
             log.info(
@@ -292,38 +273,7 @@ class BGGCollection:
                     ]
 
 
-# def read_bgg_plays(data):
-#     soup = BeautifulSoup(data, features="xml")
-#     plays = soup.find_all("play")
-
-#     play_data = []
-
-#     for play in plays:
-#         id = play.get("id")
-#         date = play.get("date")
-#         qty = play.get("quantity")
-#         location = play.get("location")
-#         game = play.find("item").get("name")
-#         players = []
-#         if play.find("players"):
-#             players = [player.get("name") for player in play.find_all("player")]
-
-#         play_data.append({
-#             "fields": {
-#                 "date": date,
-#                 "game": game,
-#                 "plays": qty,
-#                 "location": location,
-#                 "players": players,
-#                 "id": id
-#             }
-#         })
-
-#     return play_data
-
-
 def update_airtable(game_data, table_id, key_fields):
-    gha("group", "Airtable upsert")
     log.info(
         "Upserting %d records to Airtable base %s table %s (key fields %s)",
         len(game_data),
@@ -333,7 +283,6 @@ def update_airtable(game_data, table_id, key_fields):
     )
     if not game_data:
         log.warning("No records to send to Airtable; nothing will be updated")
-        gha("warning", "0 records sent to Airtable - BGG collection came back empty")
     elif log.isEnabledFor(logging.DEBUG):
         log.debug("First record: %r", game_data[0])
     api = Api(api_key=AIRTABLE_TOKEN)
@@ -342,7 +291,6 @@ def update_airtable(game_data, table_id, key_fields):
         result = table.batch_upsert(game_data, key_fields=key_fields, typecast=True)
     except Exception:
         log.exception("Airtable batch_upsert failed")
-        gha("error", "Airtable batch_upsert raised an exception; see log")
         raise
     created = result.get("createdRecords", []) if isinstance(result, dict) else []
     updated = result.get("updatedRecords", []) if isinstance(result, dict) else []
@@ -352,22 +300,13 @@ def update_airtable(game_data, table_id, key_fields):
         len(updated),
         len(result.get("records", [])) if isinstance(result, dict) else -1,
     )
-    gha("endgroup", "")
 
 
 if __name__ == "__main__":
-    gha("group", "Environment")
     log.info("Running in GitHub Actions: %s", IN_GITHUB_ACTIONS)
     log.info("Python %s", sys.version.split()[0])
     for name in ("BGGUSERNAME", "PW", "AIRTABLE_TOKEN", "BGGTOKEN"):
         log.info(describe_secret(name, os.getenv(name)))
-    gha("endgroup", "")
-    for name in ("BGGUSERNAME", "PW", "AIRTABLE_TOKEN", "BGGTOKEN"):
-        if not os.getenv(name):
-            gha(
-                "error",
-                f"Environment variable {name} is missing or empty - check repo secrets",
-            )
 
     bgg = BGGSession()
     retries = 1
@@ -388,13 +327,13 @@ if __name__ == "__main__":
             "The collection wasn't successfully retrieved after %d attempts.",
             retries - 1,
         )
-        gha("error", "BGG collection was never ready")
+        sys.exit(1)
     else:
         game_data = BGGCollection(data)
         update_airtable(
             game_data.data, COLLECTION_TABLE, ["game", "object_id", "coll_id"]
         )
-        with open("log.txt", "a") as f:
-            f.write(
-                f"{time.strftime('%Y-%m-%d', time.localtime(time.time()))}: Found {len(game_data.data)} games and {sum([int(r['fields']['plays']) for r in game_data.data if r['fields']['plays']])} plays\n"
-            )
+        total_plays = sum(
+            int(r["fields"]["plays"]) for r in game_data.data if r["fields"]["plays"]
+        )
+        log.info("Found %d games and %d plays", len(game_data.data), total_plays)
