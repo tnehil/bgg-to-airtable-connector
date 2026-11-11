@@ -62,12 +62,16 @@ def log_response(label, resp, body_chars=300):
     interesting = {
         k: v
         for k, v in resp.headers.items()
-        if k.lower() in ("server", "cf-ray", "cf-mitigated", "retry-after", "www-authenticate")
+        if k.lower()
+        in ("server", "cf-ray", "cf-mitigated", "retry-after", "www-authenticate")
     }
     if interesting:
         log.info("%s notable headers: %s", label, interesting)
     if body_chars:
-        log.info("%s body (first %d chars): %r", label, body_chars, resp.text[:body_chars])
+        log.info(
+            "%s body (first %d chars): %r", label, body_chars, resp.text[:body_chars]
+        )
+
 
 # move to .env?
 AIRTABLE_BASE = "appP335Rk2WlkFqCs"
@@ -85,6 +89,14 @@ class BGGSession(requests.Session):
     def __init__(self, user=USER, pw=PW):
         self.user = user
         super().__init__()
+        self.headers.update(
+            {
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+                "Accept": "application/json, text/plain, */*",
+                "Origin": "https://boardgamegeek.com",
+                "Referer": "https://boardgamegeek.com/login",
+            }
+        )
         gha("group", "BGG login")
         log.info("Logging in to BGG as user %r", user)
         resp = self.post(
@@ -99,7 +111,9 @@ class BGGSession(requests.Session):
             log.error("BGG login failed with HTTP %s", resp.status_code)
             gha("error", f"BGG login failed with HTTP {resp.status_code}")
         elif "bggusername" not in [c.lower() for c in cookie_names]:
-            log.warning("Login returned OK but no bggusername cookie; login may not have worked")
+            log.warning(
+                "Login returned OK but no bggusername cookie; login may not have worked"
+            )
             gha("warning", "BGG login returned no bggusername cookie")
         gha("endgroup", "")
 
@@ -112,7 +126,10 @@ class BGGSession(requests.Session):
         log_response("Collection", req)
         soup = BeautifulSoup(req.text, features="xml")
         if soup.find("message"):
-            log.info("Collection response contained <message>: %r", soup.find("message").text.strip())
+            log.info(
+                "Collection response contained <message>: %r",
+                soup.find("message").text.strip(),
+            )
             raise CollectionNotReadyException
         errors = soup.find_all("error")
         if errors:
@@ -121,8 +138,13 @@ class BGGSession(requests.Session):
             gha("error", "BGG collection API returned an error; see log")
         items_tag = soup.find("items")
         if items_tag is None:
-            log.error("Collection response has no <items> element (not the expected XML)")
-            gha("error", f"Collection response was not the expected XML (HTTP {req.status_code})")
+            log.error(
+                "Collection response has no <items> element (not the expected XML)"
+            )
+            gha(
+                "error",
+                f"Collection response was not the expected XML (HTTP {req.status_code})",
+            )
         else:
             n = len(items_tag.find_all("item"))
             log.info(
@@ -212,10 +234,15 @@ class BGGCollection:
             items_tag = soup.find("items")
             if items_tag is None:
                 log.error("Thing response for batch has no <items>; skipping batch")
-                gha("error", f"BGG thing API returned unexpected response (HTTP {req.status_code})")
+                gha(
+                    "error",
+                    f"BGG thing API returned unexpected response (HTTP {req.status_code})",
+                )
                 continue
             items = items_tag.find_all("item")
-            log.info("Thing batch: requested %d ids, got %d items", len(batch), len(items))
+            log.info(
+                "Thing batch: requested %d ids, got %d items", len(batch), len(items)
+            )
             for item in items:
                 id = item.get("id")
                 weight = item.find("statistics").find("averageweight").get("value")
@@ -337,7 +364,10 @@ if __name__ == "__main__":
     gha("endgroup", "")
     for name in ("BGGUSERNAME", "PW", "AIRTABLE_TOKEN", "BGGTOKEN"):
         if not os.getenv(name):
-            gha("error", f"Environment variable {name} is missing or empty - check repo secrets")
+            gha(
+                "error",
+                f"Environment variable {name} is missing or empty - check repo secrets",
+            )
 
     bgg = BGGSession()
     retries = 1
@@ -348,12 +378,16 @@ if __name__ == "__main__":
             break
         except CollectionNotReadyException:
             log.info(
-                "Collection not ready; trying again in 30 seconds. (Attempt #%d)", retries
+                "Collection not ready; trying again in 30 seconds. (Attempt #%d)",
+                retries,
             )
             time.sleep(30)
             retries += 1
     if data is None or data.find("message"):
-        log.error("The collection wasn't successfully retrieved after %d attempts.", retries - 1)
+        log.error(
+            "The collection wasn't successfully retrieved after %d attempts.",
+            retries - 1,
+        )
         gha("error", "BGG collection was never ready")
     else:
         game_data = BGGCollection(data)
